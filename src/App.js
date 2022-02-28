@@ -13,11 +13,11 @@ class App extends Component {
       searchField: "",
     };
   }
-
+  
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((Response) => Response.json())
-      .then((users) => this.setState({ monsters: users }));
+      .then((users) => this.setState({ monsters: users })); 
   }
 
   handleChange = (e) => {
